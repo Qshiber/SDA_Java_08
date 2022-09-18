@@ -19,7 +19,11 @@ public class Exercise_07 {
 
         System.out.println("Insert positive integer: ");
         int usersNumber = getNumberFromUserInput();
-        System.out.println(numbersArray(usersNumber));
+        System.out.println("Insert number to divide by: ");
+        int userNumDiv = getNumberFromUserInput();
+        System.out.printf("Numbers that can be divided by 2: %s\n", numbersArray(usersNumber,2));
+        System.out.printf("Numbers that can be divided by 3: %s\n", numbersArray(usersNumber,3));
+        System.out.printf("Numbers that can be divided by %d: %s\n", userNumDiv, numbersArray(usersNumber,userNumDiv));
 
 
     }
@@ -43,6 +47,16 @@ public class Exercise_07 {
         List<Integer> numbers = new ArrayList<>();
         for (int i = 1; i <= usersNumber; i++) {
             if (i % 2 == 0 || i % 3 == 0 || i % usersNumber == 0) {
+                numbers.add(i);
+            }
+        }
+        return numbers;
+    }
+
+    private static List<Integer> numbersArray(int usersNumber, int number) {
+        List<Integer> numbers = new ArrayList<>();
+        for (int i = 1; i <= usersNumber; i++) {
+            if (i % number == 0) {
                 numbers.add(i);
             }
         }
