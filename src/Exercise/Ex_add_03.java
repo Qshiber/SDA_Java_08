@@ -17,12 +17,12 @@ public class Ex_add_03 {
 
     }
 
-    public static void makeL(int size, String s){
+    public static void makeL(int size, String s) {
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 if (j == 0) {
                     System.out.printf("%s ", s);
-                } else if (i == (size - 1)){
+                } else if (i == (size - 1)) {
                     System.out.printf("%s ", s);
                 }
             }

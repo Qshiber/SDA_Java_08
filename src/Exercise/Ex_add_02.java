@@ -17,16 +17,16 @@ public class Ex_add_02 {
 
     }
 
-    public static void makeRectangle(int width, int height, String s){
+    public static void makeRectangle(int width, int height, String s) {
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width; j++) {
-                if (i == 0 || i == (height - 1)){
+                if (i == 0 || i == (height - 1)) {
                     System.out.printf("%s ", s);
                 } else if (j == 0) {
                     System.out.printf("%s", s);
-                } else if (j == (width-1)){
+                } else if (j == (width - 1)) {
                     System.out.printf(" %s", s);
-                } else{
+                } else {
                     System.out.print("  ");
                 }
             }

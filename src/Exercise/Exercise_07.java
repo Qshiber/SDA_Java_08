@@ -21,9 +21,9 @@ public class Exercise_07 {
         int usersNumber = getNumberFromUserInput();
         System.out.println("Insert number to divide by: ");
         int userNumDiv = getNumberFromUserInput();
-        System.out.printf("Numbers that can be divided by 2: %s\n", numbersArray(usersNumber,2));
-        System.out.printf("Numbers that can be divided by 3: %s\n", numbersArray(usersNumber,3));
-        System.out.printf("Numbers that can be divided by %d: %s\n", userNumDiv, numbersArray(usersNumber,userNumDiv));
+        System.out.printf("Numbers divisible by 2: %s\n", numbersArray(usersNumber, 2));
+        System.out.printf("Numbers divisible by 3: %s\n", numbersArray(usersNumber, 3));
+        System.out.printf("Numbers divisible by %d: %s\n", userNumDiv, numbersArray(usersNumber, userNumDiv));
 
 
     }

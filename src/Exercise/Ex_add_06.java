@@ -1,19 +1,8 @@
 package Exercise;
-/* 1. Kwadrat pusty w środku (wyłącznie krawędzie).
-* * * *
-*     *
-*     *
-* * * *
-
-1. Jeżeli i = 0 i i = size -1 wypisz same "* "
-2. Else
-
- */
-
 
 import java.util.Scanner;
 
-public class Ex_add_01 {
+public class Ex_add_06 {
 
     public static void main(String[] args) {
 
@@ -26,6 +15,7 @@ public class Ex_add_01 {
     }
 
     public static void makeSquare(int size, String s) {
+        int counter = 0;
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 if (i == 0 || i == (size - 1)) {
@@ -33,11 +23,14 @@ public class Ex_add_01 {
                 } else if (j == 0) {
                     System.out.printf("%s", s);
                 } else if (j == (size - 1)) {
-                    System.out.printf(" %s", s);
+                    System.out.printf("%s", s);
+                } else if (j == counter) {
+                    System.out.printf(" %s ", s);
                 } else {
                     System.out.print("  ");
                 }
             }
+            counter++;
             System.out.println();
         }
     }
